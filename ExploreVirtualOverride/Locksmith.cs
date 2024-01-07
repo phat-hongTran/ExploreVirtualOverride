@@ -13,7 +13,7 @@ namespace ExploreVirtualOverride
             ReturnContents(safeContents, owner);
         }
 
-        protected void ReturnContents(string safeContents, SafeOwner owner)
+        protected virtual void ReturnContents(string safeContents, SafeOwner owner)
         {
             owner.ReceiveContents(safeContents);
         }
